@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/drawable/bg_window.xml" value="0.178" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/drawable/circle.xml" value="0.178" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/drawable/ic_calories.xml" value="0.1555" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/drawable/ic_home_foreground.xml" value="0.178" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.178" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/drawable/ic_person.xml" value="0.2365" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/drawable/ic_run.xml" value="0.1555" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/drawable/navbar_color.xml" value="0.1555" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/drawable/running_icon.xml" value="0.1555" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/drawable/selector.xml" value="0.1555" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/drawable/star_step_goal.xml" value="0.1545" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/layout/activity_second.xml" value="0.25" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/layout/creator_custom_dialog.xml" value="0.25" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/layout/custom_dialog_stepsgoal.xml" value="0.25" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/layout/day1barchart.xml" value="0.25" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/layout/day2barchart.xml" value="0.25" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/layout/day3barchart.xml" value="0.25" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/layout/day4barchart.xml" value="0.25" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/layout/day5barchart.xml" value="0.25" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/layout/day6barchart.xml" value="0.25" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/layout/day7barchart.xml" value="0.25" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/layout/fridaybar_chart.xml" value="0.25" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/layout/information_activity.xml" value="0.25" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/layout/layout_linear_custom_dialog.xml" value="0.25" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/layout/layout_linear_custom_dialog2.xml" value="0.25" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/layout/layout_linear_custom_dialog3.xml" value="0.25" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/layout/mondaybar_chart.xml" value="0.25" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/layout/profile_activity.xml" value="0.25" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.215625" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/MarchBachelorarbeit/UpdatedStepCounterV2-20220308T163027Z-001/UpdatedStepCounterV2/app/src/main/res/menu/main.xml" value="0.215625" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/UpdatedStepCounterV2/app/src/main/res/layout/activity_main.xml" value="0.33958333333333335" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/UpdatedStepCounterV2/app/src/main/res/layout/creator_custom_dialog.xml" value="0.27853260869565216" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/UpdatedStepCounterV2/app/src/main/res/layout/custom_dialog_stepsgoal.xml" value="0.27853260869565216" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/UpdatedStepCounterV2/app/src/main/res/layout/day1barchart.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/UpdatedStepCounterV2/app/src/main/res/layout/fridaybar_chart.xml" value="0.27853260869565216" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/UpdatedStepCounterV2/app/src/main/res/layout/mondaybar_chart.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/UpdatedStepCounterV2/app/src/main/res/layout/saturday_barchart.xml" value="0.27853260869565216" />
+        <entry key="..\:/Users/dimi1/Bachelorarbeit/UpdatedStepCounterV2/app/src/main/res/layout/sunday_barchart.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/drawable/bg_window.xml" value="0.251" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/drawable/layout_bg.xml" value="0.3085" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/layout/activity_main.xml" value="0.33695652173913043" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/layout/activity_second.xml" value="0.2453125" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/layout/creator_custom_dialog.xml" value="0.33695652173913043" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/layout/custom_dialog_stepsgoal.xml" value="0.33695652173913043" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/layout/day1barchart.xml" value="0.33695652173913043" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/layout/day2barchart.xml" value="0.33695652173913043" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/layout/day3barchart.xml" value="0.340625" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/layout/day4barchart.xml" value="0.340625" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/layout/day5barchart.xml" value="0.340625" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/layout/day6barchart.xml" value="0.340625" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/layout/day7barchart.xml" value="0.340625" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/layout/fridaybar_chart.xml" value="0.33695652173913043" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/layout/layout_bg.xml" value="0.30520833333333336" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/layout/layout_linear_custom_dialog.xml" value="0.34556159420289856" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/layout/layout_linear_custom_dialog2.xml" value="0.33695652173913043" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/layout/layout_linear_custom_dialog3.xml" value="0.33695652173913043" />
+        <entry key="..\:/Users/retro/Desktop/Bachelor - Updated/UpdatedStepCounterV2/app/src/main/res/layout/mondaybar_chart.xml" value="0.33695652173913043" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.27760416666666665" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/drawable/bg_window.xml" value="0.24791666666666667" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/drawable/circle.xml" value="0.3104166666666667" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.27760416666666665" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/drawable/star_step_goal.xml" value="0.27760416666666665" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/layout/activity_second.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/layout/circle.xml" value="0.29347826086956524" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/layout/creator_custom_dialog.xml" value="0.34427083333333336" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/layout/custom_dialog_birthday.xml" value="0.2375" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/layout/custom_dialog_stepsGoal.xml" value="0.296195652173913" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/layout/friday_barchart.xml" value="0.26145833333333335" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/layout/fridaybar_chart.xml" value="0.26145833333333335" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/layout/layout_custom_dialog.xml" value="0.31203703703703706" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/layout/layout_linear_custom_dialog.xml" value="0.33" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/layout/layout_linear_custom_dialog2.xml" value="0.33" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/layout/layout_linear_custom_dialog3.xml" value="0.33" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/layout/mondaybar_chart.xml" value="0.2234375" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/layout/saturday_barchart.xml" value="0.26145833333333335" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/layout/sunday_barchart.xml" value="0.26145833333333335" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/layout/thursday_barchart.xml" value="0.26145833333333335" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/layout/tuesdaybar_chart.xml" value="0.26145833333333335" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/layout/wednesdaybar_chart.xml" value="0.26145833333333335" />
+        <entry key="..\:/Users/retro/Desktop/Bachelorarbeit/Bachelorarbeit/Java Google Speck/UpdatedStepCounterV2/app/src/main/res/menu/main.xml" value="0.20520833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

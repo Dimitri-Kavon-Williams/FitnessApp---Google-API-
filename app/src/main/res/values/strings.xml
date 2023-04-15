@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Bachelorprojekt - Dimitri Williams - 874752</string>
+    <string name="intro_text">Hi! Let\'s track daily cumulative steps. Use the menu to explore additional actions.</string>
+    <string name="action_dump_subs">List Active Subscriptions</string>
+    <string name="action_cancel_subs">Cancel subscriptions</string>
+    <string name="action_settings">Settings</string>
+    <string name="seperator_numberpicker">,</string>
+    <string name="btntxt_abbrechen">Abbrechen</string>
+    <string name="btntxt_OK">OK</string>
+    <string name="txtvdescr_gewicht"><u>Gewicht</u></string>
+    <string name="txtv_kg">kg</string>
+    <string name="descr_height"><u>Größe</u></string>
+    <string name="txtvdescr_gender">Gender</string>
+    <string name="gender_w">Weiblich</string>
+    <string name="gender_m">Männlich</string>
+    <string name="gender_d">Divers</string>
+    <string name="gender_add">Geschlecht hinzufügen</string>
+    <string name="hint_text">Here some hint text</string>
+    <string name="gebursttag">Geburtstag</string>
+    <string name="gr_e">Größe</string>
+    <string name="geschlecht">Geschlecht</string>
+    <string name="gewicht">Gewicht</string>
+    <string name="schritteziel">Schritteziel</string>
+    <string name="schritte">Schritte</string>
+
+</resources>

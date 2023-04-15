@@ -1,0 +1,137 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="fitnessdata"
+            type="com.google.android.gms.fit.samples.stepcounter.FitnessDataModel" />
+    </data>
+
+    <!-- Outer Layer -->
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:orientation="vertical">
+
+            <!-- Inner Layer 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtvdescr_gender"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    android:textStyle="bold">
+                </TextView>
+
+            </LinearLayout>
+            <!-- Inner Layer 1 -->
+
+            <!-- Inner Layer 2 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <RadioGroup
+                    android:id="@+id/rgrp_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbtn_male"
+                    android:layout_width="wrap_content"
+                    android:text="@string/gender_m"
+                    android:layout_height="wrap_content">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rbtn_female"
+                    android:layout_width="wrap_content"
+                    android:text="@string/gender_w"
+                    android:layout_height="wrap_content">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rbtn_diverse"
+                    android:layout_width="wrap_content"
+                    android:text="@string/gender_d"
+                    android:layout_height="wrap_content">
+                </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rbtn_custom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Geschlecht">
+                    </RadioButton>
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/editTxtV_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/gender_add"
+                    android:layout_marginTop="146dp"
+                    android:layout_marginLeft="10dp"
+                    android:text=""></EditText>
+            </LinearLayout>
+            <!-- Inner Layer 2 -->
+
+            <!-- Inner Layer 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="350dp"
+                android:paddingRight="30dp">
+
+                <!--  ADDED SPACER VIEW -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <!--- /ADDED SPACER VIEW -->
+
+                <Button
+                    android:id="@+id/btn_cancel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:text="@string/btntxt_abbrechen"
+                    android:textColor="@color/blue"
+                    android:textSize="8dp"
+                    android:theme="@style/AppTheme.OutlinedButtons"
+                    app:strokeColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btn_ok2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:minHeight="0dp"
+                    android:text="@string/btntxt_OK"
+                    android:textColor="@color/blue"
+                    android:textSize="8dp"
+                    android:theme="@style/AppTheme.OutlinedButtons"
+                    app:strokeColor="@color/black" />
+            </LinearLayout>
+
+            <!-- Inner Layer 3 -->
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <!-- Outer Layer -->
+</layout>

@@ -1,0 +1,405 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="fitnessdata"
+            type="com.google.android.gms.fit.samples.stepcounter.FitnessDataModel" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/main_activity_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/ic_circle" />
+
+        <TextView
+            android:id="@+id/runIcon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="-112dp"
+            android:foreground="@drawable/ic_run" />
+
+        <TextView
+            android:id="@+id/RealTimeSteps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="@{String.valueOf(fitnessdata.addCurrent(fitnessdata.currentsteps))}"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/schritte"
+            android:textColor="@color/black"></TextView>
+
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/calorieIcon"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_calories"></TextView>
+
+            <TextView
+                android:id="@+id/Calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calorieIcon"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1dp"
+                android:text="@{String.valueOf(fitnessdata.calories)}"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/kcal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Calories"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1dp"
+                android:text="Kcal"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/speedIcon"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="304dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_speed"></TextView>
+
+            <TextView
+                android:id="@+id/m_pro_s"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/speedIcon"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="1dp"
+                android:text="@{String.valueOf(fitnessdata.speed)}"
+                android:textColor="@color/black"></TextView>
+
+            <TextView
+                android:id="@+id/geschwindigkeit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/m_pro_s"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="1dp"
+                android:text="m/s"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/cardview_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp">
+
+                <ProgressBar
+                    android:id="@+id/progressbarday_1"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/circle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/star_step_goal_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/star_step_goal"
+                    android:visibility="invisible"></ImageView>
+
+                <TextView
+                    android:id="@+id/pb_sundaytxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="45dp"
+                    android:text="S"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <ImageView
+                    android:id="@+id/star_step_goal_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/star_step_goal"
+                    android:visibility="invisible"></ImageView>
+
+                <ProgressBar
+                    android:id="@+id/progressbarday_2"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/circle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/pb_mondaytxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="45dp"
+                    android:text="M"></TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <ImageView
+                    android:id="@+id/star_step_goal_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/star_step_goal"
+                    android:visibility="invisible"></ImageView>
+
+                <ProgressBar
+                    android:id="@+id/progressbarday_3"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="12dp"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/circle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/pb_tuesdaytxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="45dp"
+                    android:text="D"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <ImageView
+                    android:id="@+id/star_step_goal_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/star_step_goal"
+                    android:visibility="invisible"></ImageView>
+
+                <ProgressBar
+                    android:id="@+id/progressbarday_4"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/circle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/pb_wednesdaytxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="45dp"
+                    android:text="Mi"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <ImageView
+                    android:id="@+id/star_step_goal_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/star_step_goal"
+                    android:visibility="invisible"></ImageView>
+
+                <ProgressBar
+                    android:id="@+id/progressbarday_5"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/circle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/pb_thursdaytxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="45dp"
+                    android:text="D"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <ImageView
+                    android:id="@+id/star_step_goal_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/star_step_goal"
+                    android:visibility="invisible"></ImageView>
+
+                <ProgressBar
+                    android:id="@+id/progressbarday_6"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/circle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/pb_fridaytxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="45dp"
+                    android:text="F"></TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <ImageView
+                    android:id="@+id/star_step_goal_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/star_step_goal"
+                    android:visibility="invisible"></ImageView>
+
+                <ProgressBar
+                    android:id="@+id/progressbarday_7"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/circle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/pb_saturdaytxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="45dp"
+                    android:text="S"></TextView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:layout_marginTop="125dp"
+            app:itemIconTint="@drawable/navbar_color"
+            app:itemTextColor="@drawable/navbar_color"
+            app:menu="@menu/bottom_nav_menu" />
+
+        <ScrollView
+            android:id="@+id/ScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/title_text_view"
+            android:visibility="gone">
+
+            <com.google.android.gms.fit.samples.common.logger.LogView
+                android:id="@+id/sample_logview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+        </ScrollView>
+    </LinearLayout>
+</layout>

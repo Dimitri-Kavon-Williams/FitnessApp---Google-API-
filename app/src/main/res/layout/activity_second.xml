@@ -1,0 +1,61 @@
+<layout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="fitnessdata"
+            type="com.google.android.gms.fit.samples.stepcounter.FitnessDataModel" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/second_activity_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools.context=".SecondActivity"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/weekly_steps_descr"
+            android:text="Aggregation aller Schritte einer Woche:"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:id="@+id/weekly_steps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "/>
+
+        <TextView
+            android:id="@+id/weekly_distance_descr"
+            android:text="Aggregation der zurückgelegten Distanz einer Woche in Meter:"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:id="@+id/weekly_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "/>
+
+        <TextView
+            android:id="@+id/weekly_calories_descr"
+            android:text="Aggregation der verbrannten Kalorien einer Woche:"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:id="@+id/weekly_calories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "/>
+
+</LinearLayout>
+
+</layout>

@@ -1,0 +1,104 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="fitnessdata"
+            type="com.google.android.gms.fit.samples.stepcounter.FitnessDataModel" />
+    </data>
+
+    <!-- Outer Layer -->
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:orientation="vertical">
+
+            <!-- Inner Layer 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/descr_height"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    android:textStyle="bold">
+                </TextView>
+
+            </LinearLayout>
+            <!-- Inner Layer 1 -->
+
+            <!-- Inner Layer 2 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <NumberPicker
+                    android:id="@+id/numberPicker1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    app:theme="@style/DefaultNumberPickerTheme"></NumberPicker>
+
+
+            </LinearLayout>
+            <!-- Inner Layer 2 -->
+
+            <!-- Inner Layer 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="350dp"
+                android:paddingRight="30dp">
+
+                <!--  ADDED SPACER VIEW -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <!--- /ADDED SPACER VIEW -->
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:text="@string/btntxt_abbrechen"
+                    android:textColor="@color/blue"
+                    android:textSize="8dp"
+                    android:theme="@style/AppTheme.OutlinedButtons"
+                    app:strokeColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:minHeight="0dp"
+                    android:text="@string/btntxt_OK"
+                    android:textColor="@color/blue"
+                    android:textSize="8dp"
+                    android:theme="@style/AppTheme.OutlinedButtons"
+                    app:strokeColor="@color/black" />
+            </LinearLayout>
+
+            <!-- Inner Layer 3 -->
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <!-- Outer Layer -->
+</layout>

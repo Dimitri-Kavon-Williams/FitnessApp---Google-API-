@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="fitnessdata"
+            type="com.google.android.gms.fit.samples.stepcounter.FitnessDataModel" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:background="@drawable/layout_bg"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:layout_height="match_parent">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/day2_barchart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.github.mikephil.charting.charts.BarChart>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>

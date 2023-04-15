@@ -1,0 +1,513 @@
+
+<layout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="fitnessdata"
+            type="com.google.android.gms.fit.samples.stepcounter.FitnessDataModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/main_activity_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/StepsTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(fitnessdata.add(fitnessdata.currentsteps))}"
+            android:textColor="#EF8F00"/>
+
+        <TextView
+            android:id="@+id/StepsTease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(fitnessdata.currentsteps)}"
+            android:textColor="#EF8F00"/>
+
+        <TextView
+            android:id="@+id/CurrentStep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Currentsteps Total:"
+            android:textColor="#EF8F00"/>
+
+        <TextView
+            android:id="@+id/RealTimeSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(fitnessdata.addCurrent(fitnessdata.currentsteps))}"
+            android:textColor="#EF8F00"/>
+
+        <TextView
+            android:id="@+id/Calories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(fitnessdata.calories)}"
+            android:textColor="#EF8F00"/>
+
+        <TextView
+            android:id="@+id/Distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(fitnessdata.distance)}"
+            android:textColor="#EF8F00"/>
+
+        <TextView
+            android:id="@+id/Speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(fitnessdata.speed)}">
+        </TextView>
+
+        <TextView
+            android:id="@+id/StepCadence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="StepCadence">
+        </TextView>
+
+        <TextView
+            android:id="@+id/TestStuff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weekly Steps Value:"
+            android:textColor="#EF8F00">
+        </TextView>
+
+        <TextView
+            android:id="@+id/WeeklyStuff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(fitnessdata.weeklySteps)}" />
+
+        <TextView
+            android:id="@+id/ReadMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='"Here is some text"' />
+
+        <TextView
+            android:id="@+id/numberPickerText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="">
+        </TextView>
+
+        <TextView
+            android:id="@+id/numberPickerText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="">
+        </TextView>
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/intro_text" />
+
+        <Button
+            android:id="@+id/btn_LastWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="Last week data" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtIn_height"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/gr_e">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtIn_heightET"
+                android:focusableInTouchMode="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_weight"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:icon="@android:drawable/arrow_down_float"
+            app:iconGravity="end"
+            app:iconSize="8dp"
+            app:iconTint="@color/black"
+            app:strokeColor="@color/anthracite"
+            android:text="Weight Button" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtIn_stepgoal"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/schritteziel">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtIn_stepgoalET"
+                android:focusableInTouchMode="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtIN_weight"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/gewicht">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtIN_weightET"
+                android:focusableInTouchMode="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtIN_gender"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/geschlecht">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtIN_genderET"
+                android:focusableInTouchMode="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtIN_birthday"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/gebursttag">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtIN_birthdayET"
+                android:focusableInTouchMode="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cardview_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_sunday"
+            android:layout_width="wrap_content"
+            android:paddingLeft="15dp"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/progressbarday_1"
+                style="?android:progressBarStyleHorizontal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:progress="80"
+                android:progressDrawable="@drawable/circle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/star_step_goal_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:src="@drawable/star_step_goal"></ImageView>
+
+            <TextView
+                android:id="@+id/pb_sundaytxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="45dp"
+                android:text="S">
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_monday"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/star_step_goal_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:src="@drawable/star_step_goal"></ImageView>
+
+                <ProgressBar
+                    android:id="@+id/progressbarday_2"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/circle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/pb_mondaytxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="45dp"
+                    android:text="M">
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_tuesday"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/star_step_goal_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/star_step_goal"></ImageView>
+
+                <ProgressBar
+                    android:id="@+id/progressbarday_3"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/circle"
+                    android:layout_marginBottom="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/pb_tuesdaytxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="45dp"
+                    android:text="D">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_wednesday"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/star_step_goal_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/star_step_goal"></ImageView>
+
+                <ProgressBar
+                    android:id="@+id/progressbarday_4"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/circle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/pb_wednesdaytxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="45dp"
+                    android:text="Mi">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_thursday"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/star_step_goal_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/star_step_goal"></ImageView>
+
+                <ProgressBar
+                    android:id="@+id/progressbarday_5"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/circle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/pb_thursdaytxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="45dp"
+                    android:text="D">
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_friday"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/star_step_goal_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/star_step_goal"></ImageView>
+
+                <ProgressBar
+                    android:id="@+id/progressbarday_6"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/circle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/pb_fridaytxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="45dp"
+                    android:text="F">
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_saturday"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/star_step_goal_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/star_step_goal"></ImageView>
+
+                <ProgressBar
+                    android:id="@+id/progressbarday_7"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/circle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/pb_saturdaytxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="45dp"
+                    android:text="S">
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/title_text_view">
+
+            <com.google.android.gms.fit.samples.common.logger.LogView
+                android:id="@+id/sample_logview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+        </ScrollView>
+        <!-- Included dialog layouts -->
+
+    </LinearLayout>
+    </ScrollView>
+</layout>
